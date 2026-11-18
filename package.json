@@ -1,0 +1,19 @@
+{
+  "name": "orbit-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mission Control for the Orbit AI Dev Team (Hermes): live task stages, agent flow graph, costs and logs.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "node --check src/server.js && node --check src/app.js && node --check src/api.js && node --check public/app.js && node --check collector/collector.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0"
+  }
+}
